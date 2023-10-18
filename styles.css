@@ -1,0 +1,34 @@
+/* Add your website's styles here */
+
+body{
+    height: 900px;
+    width: 100%;
+    background-color: burlywood;
+}
+/* Add your website's styles here */
+
+/* Center the sticky buttons at the bottom */
+.sticky-buttons {
+    display: flex;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center; /* Center-align the buttons */
+}
+
+.button {
+    width: 100%;
+    height: 40px;
+    padding: 10px 20px;
+    background-color: whitesmoke; /* Button background color */
+    color: #000; /* Button text color */
+    border: none;
+    cursor: pointer;
+ 
+}
+
+.btn:hover {
+    background-color: #0056b3; /* Button background color on hover */
+}

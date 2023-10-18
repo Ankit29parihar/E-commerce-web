@@ -1,0 +1,395 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="product-details.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+  </head>
+  <body>
+    <div id="main">
+        <div id="header">
+            <nav class="navbar">
+              <div class="left">
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasNavbar"
+                  aria-controls="offcanvasNavbar"
+                  aria-label="Toggle navigation"
+                >
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <div class="container">
+                  <a class="navbar-brand" href="#">
+                    <img
+                      src="image/Logo(2).png"
+                      alt="Bootstrap"
+                      width="70"
+                      height="70"
+                    />
+                  </a>
+                </div>
+                 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                      <h5 class="offcanvas-title" id="offcanvasNavbarLabel "><span>Welcome To DIPOLS</span> </h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                      <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="#">My Order</a>
+                          <a href=""><i class="ri-headphone-line"></i></a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Coupan</a>
+                          <a href=""><i class="ri-price-tag-3-fill"></i></a>
+                        </li>
+                        <li class="nav-item">
+                          <p>Shop</p>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Men</a>
+                          <a href=""><i class="ri-price-tag-3-fill"></i></a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Women</a>
+                          <a href=""><i class="ri-price-tag-3-fill"></i></a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Coupan</a>
+                          <a href=""><i class="ri-price-tag-3-fill"></i></a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Accessories</a>
+                          <a href=""><i class="ri-price-tag-3-fill"></i></a>
+                        </li>
+                        
+                       
+                      </ul>
+                      
+                      <ul >
+                      
+                    </div>
+                    <div class="light-fade navbar-nav justify-content-end flex-grow-1 pe-3">
+                      <li class="nav-item">
+                        <p>About</p> 
+                        
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us</a>
+                        <a href=""><i class="ri-price-tag-3-fill"></i></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Facebook-Handle</a>
+                        <a href=""><i class="ri-price-tag-3-fill"></i></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Instagram-Handel</a>
+                        <a href=""><i class="ri-price-tag-3-fill"></i></a>
+                      </li>
+                    </div>
+                  </ul>
+                  </div>
+              </div>
+              <div class="right">
+              <div class="icons">
+                <div class="fs-5 nav-link">
+                  <a href="sign-up.html" class="nav-link"><i class="ri-user-add-fill"></i></a>
+                </div>
+                <div class="fs-5 nav-link">
+                  <a href="" class="nav-link"><i class="ri-search-line"></i></a>
+                </div>
+                <div class="fs-5 nav-link">
+                  <a href="" class="nav-link"
+                    ><i class="ri-shopping-bag-fill"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            </nav>
+          </div>
+
+        
+          <div id="product-detail">
+            <div class="container mt-5 mb-5">
+                <div class="card">
+                  <!-- <h3>ADIDAS</h3> in phone view-->
+                    <div class="row g-0">
+                        <div class="col-md-6 border-end">
+                            <div class="d-flex flex-column justify-content-center">
+                                <div class="main_image">
+                                    <img src="DIOPOUL INVENTARY/2.WOMEN PRODUCT/1. WOMEN SHOES/1.PRODUCT/1.jpg" id="main_product_image" width="350">
+                                </div>
+                                <div class="thumbnail_images">
+                                    <ul id="thumbnail">
+                                        <li><img onclick="changeImage(this)" src="DIOPOUL INVENTARY/2.WOMEN PRODUCT/1. WOMEN SHOES/1.PRODUCT/2.jpg" width="70"></li>
+                                        <li><img onclick="changeImage(this)" src="DIOPOUL INVENTARY/2.WOMEN PRODUCT/1. WOMEN SHOES/1.PRODUCT/3.jpg" width="70"></li>
+                                        <li><img onclick="changeImage(this)" src="DIOPOUL INVENTARY/2.WOMEN PRODUCT/1. WOMEN SHOES/1.PRODUCT/4.jpg" width="70"></li>
+                                        <li><img onclick="changeImage(this)" src="DIOPOUL INVENTARY/2.WOMEN PRODUCT/1. WOMEN SHOES/1.PRODUCT/6.jpg" width="70"></li>
+                                        <li><img onclick="changeImage(this)" src="DIOPOUL INVENTARY/1.MEN PRODUCT/1.MEN SHOES/1.PRODUCT/shoes maintain photo.png" width="70"></li>
+                                        <!-- <li><img onclick="changeImage(this)" src="" width="70"></li> -->
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="p-3 right-side">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h3>ADIDAS</h3>
+                                </div>
+                                <div class="mt-2 pr-3 content">
+                                    <p>Unisex Woven Design UltraBoost Light Running Shoes</p>
+                                </div>
+                                <p>Actual Amazone prize:- <b><span>&#8377</span>25000</b></p>
+                                <h3 id="amount">&#8377; 430.99</h3>
+                                <div class="slidecontainer">
+                                    <input type="range" min="1" max="3" value="0" class="range-input" id="range4" step="1" color="rgb(255, 136, 0)">
+                                    <div class="line">
+                                        <div class="vr"></div>
+                                        <div class="vr"></div>
+                                        <div class="vr"></div>
+                                    </div>
+                                    <div class="sliderticks">
+                                        <span>1+</span>
+                                        <span>2+</span>
+                                        <span>3+</span>
+                                    </div>
+                                    <!-- Insurance -->
+                                    <div class="insurance">
+                                        <div class="insurance-plane">
+                                            <h4>Select Insurance</h4>
+                                            <div class="month">
+                                                <button type="button" id="month1">1 Month</button>
+                                                <button type="button" id="month2">2 Months</button>
+                                                <button type="button" id="month3">3 Months</button>
+                                                
+                                            </div>
+                                            <button type="button" id="cancelInsurance" style="display: none;"><i class="ri-close-circle-line"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                               
+                                
+                                    
+                                    
+                                
+                                <div class="mt-5">
+                                    <span class="fw-bold">Chose Size</span>
+                                    <div class="colors">
+                                        <ul id="marker">
+                                            <li id="marker-1">6</li>
+                                            <li id="marker-2">7</li>
+                                            <li id="marker-3">8</li>
+                                            <li id="marker-4">9</li>
+                                            <li id="marker-5">11</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <select>
+                                  <option>select Size</option>
+                                  <option>XL</option>
+                                  <option>XXL</option>
+                                  <option>Small</option>
+                                  <option>Large</option>
+                                </select>
+                                
+                                <div class="buttons d-flex flex-row mt-5 gap-3">
+                                    <button class="btn btn-outline-dark">Buy Now</button>
+                                    <a href="add-cart.html">
+                                        <button class="btn btn-dark">Add to Basket</button>
+                                    </a>
+                                </div>
+                                <div class="search-option">
+                                    <i class='bx bx-search-alt-2 first-search'></i>
+                                    <div class="inputs">
+                                        <input type="text" name="">
+                                    </div>
+                                    <i class='bx bx-share-alt share'></i>
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                
+            </div>
+           
+        </div>
+        
+        
+        <div id="product-des">
+          <h3>PRODUCT DETAILS</h3>
+          <h6>Special Technologies:</h6>
+          <ul>
+              <li>PrimeKnit+ upper</li>
+          </ul>
+          <ul>
+              <li>Light Boost</li>
+          </ul>
+          <ul>
+              <li>Linear Energy Push system</li>
+          </ul>
+          <ul>
+              <li>Continental outsole</li>
+          </ul>
+      
+      <h3>Product Design Details:</h3>
+      <ul>
+        <li>Main material: Textile upper/ rubber outsole</li>
+    </ul>
+    <div class="read-more">
+    <ul>
+        <li>Brand colour: Cloud White / Arctic Night / Lucid Lemon</li>
+    </ul>
+    <ul>
+        <li>Woven design</li>
+    </ul>
+    <ul>
+        <li>Classic 3-stripe detail</li>
+    </ul>
+    <ul>
+        <li>Lace-up closure</li>
+    </ul>
+    <ul>
+        <li>Regular fit</li>
+    </ul>
+    <ul>
+        <li>Cushioned footbed</li>
+    </ul>
+    <ul>
+        <li>Textured and patterned outsole</li>
+    </ul>
+    <!--About Section-->
+    <div class="about">
+    <h5>About ADIDAS Unisex Woven Design UltraBoost Light Running Shoes</h5>
+    <p>Experience epic energy with the new Ultraboost Light, our lightest Ultraboost ever. The magic lies in the Light BOOST midsole, a generation of adidas BOOST. Its unique molecule design achieves the lightest BOOST foam to date. With hundreds of BOOST capsules bursting with energy and ultimate cushioning and comfort, some feet really can have it all.
+    </p>
+
+    <h6 id="second-h6">Material & Care</h6>
+    <p>Upper material: Textile <br>
+      Outsole material: Rubber <br>
+      Wipe with a clean and dry cloth to remove dust
+      </p>
+      <h6 id="second-h6">Specifications</h6>
+      <p class="light-txt">Sport</p>
+      <h6 class="light-dark-heading">Running</h6>
+      <p class="light-txt">Material</p>
+      <h6 class="light-dark-heading">Textile
+      </h6>
+      <p class="light-txt">Fastening</p>
+      <h6 class="light-dark-heading">Lace-Ups
+      </h6>
+      <p class="light-txt">Ankle Height</p>
+      <h6 class="light-dark-heading">Regular
+      </h6>
+      <p class="light-txt">Outsole Type</p>
+      <h6 class="light-dark-heading">Marking
+      </h6>
+      <p class="light-txt">No Cleats</p>
+      <h6 class="light-dark-heading">Pronation for Running Shoes
+      </h6>
+      <p class="light-txt">Medium</p>
+      <h6 class="light-dark-heading">Cushioning
+      </h6>
+      <p class="light-txt">Medium</p>
+      <h6 class="light-dark-heading">Arch Type
+      </h6>
+      <p class="light-txt">Surface Type
+      </p>
+      <h6 class="light-dark-heading">Arch Type
+      </h6>
+      <p class="light-txt">Court</p>
+      <h6 class="light-dark-heading">Technology
+      </h6>
+      <p class="light-txt">Boost</p>
+      <h6 class="light-dark-heading">Number of Items
+      </h6>
+      <p class="light-txt">2</p>
+      <h6 class="light-dark-heading">Package Contains
+      </h6>
+      <p class="light-txt">Package Contains</p>
+      <h6 class="light-dark-heading">1 Pair of shoes
+      </h6>
+    </div>
+  </div>
+ 
+  <label class="toggle-content">See More</label>
+
+  <figure class="figure">
+    <img src="image/Insurance.png" class="figure-img img-fluid rounded" alt="...">
+
+    <div class="insr-details">
+      <!-- Button trigger modal -->
+  <button type="button" class="btn btn-light" data-toggle="modal" data-target="#exampleModalLong">
+     View Details
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Understanding Insurance: 10 Key Points</h5>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>1. Definition: Insurance is a financial arrangement that provides protection against financial losses or risks.</p>
+          <p>2. Types: Insurance includes life, health, auto, home, travel, business, and liability insurance, among others.</p>
+          <p>3. Premium: Policyholders pay regular premiums to maintain their insurance coverage.</p>
+          <p>4. Coverage: Insurance policies specify the extent of protection and benefits offered.</p>
+          <p>5. Beneficiaries: Named individuals or entities receive benefits in case of covered events.</p>
+          <p>6. Deductibles: The amount policyholders must pay before the insurer covers costs.</p>
+          <p>7. Claims: The process of requesting compensation from the insurance company after covered events.</p>
+          <p>8. Exclusions: Situations or events not covered by the policy are listed as exclusions.</p>
+          <p>9. Importance: Insurance provides financial security, risk management, and legal compliance.</p>
+          <p>10. Review and Comparison: It's essential to compare policies, premiums, and coverage options to find the right insurance fit.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  </figure>
+
+  </div>
+
+          </div>
+       
+          
+
+        <div class="sticky-buttons">
+          <button class="btn"><a href="index.html"><i class="ri-home-4-line"></i></a></button>
+          <button class="btn"><a href="explore.html"><i class="fa-solid fa-rocket"></i></a></button>
+          <button class="btn"><a href="profile.html"><i class="fa-regular fa-user"></i></a></button>
+      </div>
+  
+
+
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script src="product-details.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,545 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+#main::-webkit-scrollbar{
+    overflow-y: hidden;
+}
+
+/* navigation bar */
+nav {
+    background-color: rgb(255, 136, 0);
+    height: 65px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav .icons {
+    display: flex;
+    align-items: center;
+}
+
+nav .icons i {
+    padding: 0 5px;
+}
+
+nav .left {
+    display: flex;
+    align-items: center;
+}
+
+nav .right .icons{
+    cursor: pointer;
+}
+
+nav .right .icons .search #search{
+   display: none;
+   cursor: pointer;
+    transition: all ease-in 0.9s;
+    border-radius: 15px;
+}
+
+.offcanvas{
+    height: ;
+}
+
+.offcanvas-header {
+    background-color: rgb(255, 136, 0);
+    border-bottom: 1px solid #000;
+    padding-bottom: 13px;
+}
+
+.offcanvas-body .nav-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.offcanvas span {
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.offcanvas-body .nav-item a {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.offcanvas-body .nav-item p {
+    padding: 15px 0px 0px;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.offcanvas .light-fade {
+    width: 100%;
+    background-color: rgb(229, 229, 229);
+    list-style: none;
+}
+
+.light-fade p {
+    font-size: 12px;
+}
+
+.navbar {
+    padding: 0 20px;
+}
+
+nav .custom-i i {
+    color: #000;
+}
+
+.nav-icon {
+    height: 35px;
+}
+
+/* Custom CSS to make the off-canvas menu open partially on small screens */
+/* Custom CSS to make the off-canvas menu open partially on mobile screens */
+@media (max-width: 767px) {
+    /* .offcanvas-start {
+      width: 50%; /* Adjust the width as needed */
+    /* }
+  
+    .offcanvas.show {
+      transform: translateX(0);
+    }  */
+    .offcanvas.show:not(.hiding), .offcanvas.showing {
+        transform: none;
+        width: 70%;
+    }
+  }
+  
+  
+
+/* hero section ( Men , women , Accessories) */
+
+
+.category{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.category p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    position: relative;
+    bottom: 23px;
+    text-transform: uppercase;
+}
+
+.categories {
+    margin-top: 20px;
+    padding-top: 20px;
+    text-align: center;
+    overflow: hidden;
+}
+/* Set a fixed height for all images */
+.categories img {
+    height: 100px; /* Adjust this value as needed */
+    width: 100%; /* Ensure images occupy the entire column width */
+    object-fit: cover; /* Maintain aspect ratio and cover entire container */
+    object-position: top;
+    border-radius: 20px;
+}
+/* sub category or brand logo */
+.brand-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.brand-logo img {
+    
+    max-width: 100%;
+    height: auto;
+}
+/* Wlc diopols Heading  */
+
+#wlc{
+    font-size: 12px;
+    letter-spacing: 2px;
+    padding-top: 11px;
+    text-align: center;
+    background-color: rgb(233, 231, 231);
+    height: 35px;
+}
+#wlc span{
+    font-size: 13px;
+    font-weight: 900;
+}
+
+/*Crousel/banner */
+
+.carousel {
+    margin: 20px 10px;
+}
+.carousel-inner {
+    display: flex;
+    flex-wrap: nowrap;
+    height: 70vh;
+}
+
+.carousel-inner img{
+    object-fit: cover;
+    object-position: center;
+    width: 100px;
+    height: 70vh;
+}
+
+/* Stickey Bottom button */
+
+.sticky-buttons {
+    z-index: 999;
+    display: flex;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center; /* Center-align the buttons */
+}
+
+.sticky-buttons i{
+    font-size: 21px;
+}
+
+
+.sticky-buttons .button {
+    width: 100%;
+    height: 40px;
+    padding: 10px 20px;
+    background-color: whitesmoke; /* Button background color */
+    color: #000; /* Button text color */
+    border: none;
+    cursor: pointer;
+ 
+}
+
+.sticky-buttons .button:hover {
+    background-color: rgb(255, 136, 0); /* Button background color on hover */
+}
+
+/* Mian product */
+
+#product{
+    margin-bottom: 50px;
+}
+
+#product h1{
+    text-align: center;
+    padding: 30px 0;
+    letter-spacing: 4px;
+    font-weight: 700;
+}
+
+.product-grid{
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    border-radius: 15px;
+    border: 1px solid #e7e7e7;
+    overflow: hidden;
+    transition: all 0.4s ease-out;
+    width: 100%; /* Set width to 30% for 3 products in a row on laptop screen */
+    margin-right:5%; /* Add a small gap between products */
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+.product-grid:hover{ box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.1); }
+.product-grid .product-image{ position: relative; }
+.product-grid .product-image a.image{ display: block; }
+.product-grid .product-image img{
+    padding: 0px;
+    width: 100%;
+    height: auto;
+}
+.product-grid .product-discount-label{
+    color: #fff;
+    background: rgb(216, 122, 15);
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 2px 8px;
+    border-radius: 5px;
+    position: absolute;
+    top: 0px;
+    left: 2px;
+}
+.product-grid .product-links{
+    width: 145px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    opacity: 0;
+    transform: translateX(-50%) translateY(-50%);
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transition: all 0.4s ease 0s;
+}
+.product-grid:hover .product-links{
+    opacity: 1;
+    top: 50%;
+}
+.product-grid .product-links li{
+    display: inline-block;
+    margin: 0 2px;
+}
+.product-grid .product-links li a{
+    color: #2c2c2c;
+    background: #fff;
+    font-size: 16px;
+    line-height: 42px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    display: block;
+    position: relative;
+    transition: all 0.4s ease-out 0s;
+}
+.product-grid .product-links li a:hover{
+    color: #fff;
+    background:  rgb(216, 122, 15);
+    box-shadow: 1px 1px 30px 0 rgba(0, 0, 0, 0.2);
+}
+.product-grid .product-links li a:before,
+.product-grid .product-links li a:after{
+    content: attr(data-tip);
+    color: #fff;
+    background-color: #555;
+    font-size: 12px;
+    line-height: 18px;
+    padding: 5px 10px;
+    white-space: nowrap;
+    display: none;
+    transform: translateX(-50%);
+    position: absolute;
+    left: 50%;
+    top: -40px;
+    transition: all 0.3s ease 0s;
+}
+.product-grid .product-links li a:after{
+    content: '';
+    height: 10px;
+    width: 10px;
+    padding: 0;
+    transform: translateX(-50%) rotate(45deg);
+    top: -18px;
+    z-index: -1;
+}
+.product-grid .product-links li a:hover:before,
+.product-grid .product-links li a:hover:after{
+    display: block;
+}
+.product-grid .product-content{
+    padding: 12px 12px 15px;
+    position: relative;
+}
+.product-grid .rating{
+    padding: 0;
+    margin: 0 0 8px;
+    list-style: none;
+}
+.product-grid .rating li{
+    color: rgb(255, 136, 0);
+    font-size: 14px;
+}
+.product-grid .rating .far{ color: #808080; }
+.product-grid .title{
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0 0 15px;
+}
+.product-grid .title a{
+    color: #2c2c2c;
+    transition: all 0.3s ease 0s;
+}
+.product-grid .title a:hover{ color:  rgb(255, 136, 0); }
+.product-grid .price{
+    color: black;
+    font-size: 17px;
+    font-weight: 600;
+    display: block;
+    transition: all 0.4s ease-in-out;
+}
+.product-grid .price span{
+    color: #000;
+    font-weight: 500;
+    text-decoration: line-through;
+}
+.product-grid:hover .price{ opacity: 0; }
+.product-grid .add-to-cart{
+    color: #fff;
+    background-color: rgb(255, 136, 0);
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 40px;
+    width: 140px;
+    height: 40px;
+    border-radius: 50px;
+    opacity: 0;
+    transform: translateX(-50%);
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transition: all .4s ease-out;
+}
+
+.product-content span{
+    font-size: 12px;
+    position: absolute;
+    left: 60px;
+}
+
+.product-grid .add-to-cart:hover{ background-color: #2f2f2f; }
+.product-grid:hover .add-to-cart{
+    opacity: 1;
+    bottom: 8px;
+}
+
+
+/* Media query for screens with a maximum width of 1200px (laptop) */
+@media screen and (max-width: 1200px) {
+    .product-grid {
+        width: 100%; /* Set width to 47% for 2 products in a row on laptop screen */
+        margin-right: 3%; /* Maintain a small gap between products */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .col-md-3 {
+        width: 50%; /* Display two products in a row on mobile */
+    }
+    .product-grid .product-links{
+        display: none;
+     }
+     .product-grid:hover .price{  }
+.product-grid .add-to-cart{
+  display: none;
+}
+}
+
+
+
+#product{
+    padding: 40px 15px 0;
+} 
+
+/* Select Size */
+
+
+
+/* footer */
+.footer{
+    margin-bottom: 200px;
+}
+footer{
+    background-color: blanchedalmond;
+    color: #292828;
+    font-variant: small-caps;
+}
+ footer a{
+    color: #292828;
+ }
+
+ footer #box{
+    margin-top: 30px;
+ }
+
+ /* profile page */
+
+/* crazy deals */
+
+.section-p1{
+    padding: 4rem 8rem;
+}
+#sm-banner{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+ }
+ 
+ #sm-banner .banner-box{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: flex-start;
+    background-image: url('./image/banner/Blue.jpeg');
+    background-size: contain;
+    min-width: 40rem;
+    max-width: 144rem;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    padding: 3rem;
+ }
+ 
+ #sm-banner .banner-box2{
+     background-image: url('./image/banner/Yellow.jpeg');
+ }
+ 
+ #sm-banner h4{
+     color: #fff;
+     font-size: 2rem;
+     font-weight: 300;
+ }
+ 
+ #sm-banner h2{
+     color: #fff;
+     font-size: 2.8rem;
+     font-weight: 800;
+ }
+ 
+ #sm-banner span{
+     color: #fff;
+     font-size: 1.4rem;
+     font-weight: 500;
+     padding-bottom: 1.5rem;
+ }
+ 
+ #sm-banner button{
+     font-size: 1.3rem;
+     font-weight: 600;
+     padding: 1.1rem 1.8rem;
+     color: #fff;
+     background-color: transparent;
+     cursor: pointer;
+     border: 0.1rem solid #fff;
+     outline: none;
+     transition: 0.2s;
+ }
+ 
+ #sm-banner .banner-box:hover button{
+ background-color: #088178;
+ border: 0.1rem solid #088178;
+ }
+ 
+ @media (max-width:799px) {
+    
+
+
+#sm-banner .banner-box {
+    width: 100%;
+    height: 30vh;
+    margin: 0px 12px;
+}
+ }

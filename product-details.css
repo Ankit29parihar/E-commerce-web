@@ -1,0 +1,373 @@
+body{
+    background-color: #ecedee;
+    width: 100%;
+}
+
+.card {
+    border: none;
+    overflow: hidden;
+}
+
+.thumbnail_images ul {
+    list-style: none;
+    display: flex;
+    margin-top: 10px;
+}
+
+.thumbnail_images{
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+.thumbnail_images::-webkit-scrollbar{
+    display: none;
+}
+
+.thumbnail_images ul li {
+    margin: 5px;
+    padding: 10px;
+    border: 2px solid #eee;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+ol, ul {
+    padding-left: 0;
+}
+
+.thumbnail_images ul li:hover {
+    border: 2px solid #000;
+}
+
+.main_image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    height: 400px;
+    width: 100%;
+    overflow: hidden;
+}
+
+
+.content p {
+    font-size: 12px;
+}
+
+.ratings span {
+    font-size: 14px;
+    margin-left: 12px;
+}
+
+.colors {
+    margin-top: 5px;
+}
+
+.colors ul {
+    list-style: none;
+    display: flex;
+    padding-left: 10px;
+    margin-top: 20px;
+}
+
+.colors ul li {
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    margin-right: 10px;
+    cursor: pointer;
+    border: 1px solid #000;
+}
+
+/* .colors ul li:nth-child(1) {
+    background-color: #6c704d;
+}
+
+.colors ul li:nth-child(2) {
+    background-color: #96918b;
+}
+
+.colors ul li:nth-child(3) {
+    background-color: #68778e;
+}
+
+.colors ul li:nth-child(4) {
+    background-color: #263f55;
+}
+
+.colors ul li:nth-child(5) {
+    background-color: black;
+} */
+
+.right-side {
+    position: relative;
+}
+
+.search-option {
+    position: absolute;
+    background-color: #000;
+    overflow: hidden;
+    align-items: center;
+    color: #fff;
+    width: 200px;
+    height: 200px;
+    border-radius: 49% 51% 50% 50% / 68% 69% 31% 32%;
+    left: 30%;
+    bottom: -250px;
+    transition: all 0.5s;
+    cursor: pointer;
+    border: 2px solid  rgb(255, 136, 0);
+}
+
+.search-option .first-search {
+    position: absolute;
+    top: 20px;
+    left: 90px;
+    font-size: 20px;
+    opacity: 1000;
+}
+
+.search-option .inputs {
+    opacity: 0;
+    transition: all 0.5s ease;
+    transition-delay: 0.5s;
+    position: relative;
+}
+
+.search-option .inputs input {
+    position: absolute;
+    top: 200px;
+    left: 30px;
+    padding-left: 20px;
+    background-color: transparent;
+    width: 300px;
+    border: none;
+    color: #fff;
+    border-bottom: 1px solid #eee;
+    transition: all 0.5s;
+    z-index: 10;
+}
+
+.search-option .inputs input:focus {
+    box-shadow: none;
+    outline: none;
+    z-index: 10;
+}
+
+.search-option:hover {
+    border-radius: 0px;
+    width: 100%;
+    left: 0px;
+}
+
+.search-option:hover .inputs {
+    opacity: 1;
+}
+
+.search-option:hover .first-search {
+    left: 27px;
+    top: 25px;
+    font-size: 15px;
+}
+
+.search-option:hover .inputs input {
+    top: 20px;
+}
+
+.search-option .share {
+    position: absolute;
+    right: 20px;
+    top: 22px;
+}
+
+.buttons .btn {
+    height: 50px;
+    width: 150px;
+    border-radius: 0px !important;
+}
+
+/* insurance */
+.insurance{
+    display: flex;
+    width: 100%;
+}
+
+.insurance .insurance-plane h4{
+    padding-bottom: 0px;
+    
+}
+
+.insurance .insurance-plane .month{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+    height: 100px;
+}
+
+
+.insurance .insurance-plane .month button{
+    border: 1px solid  rgb(255, 136, 0);
+    background-color: transparent;
+   width: 100px;
+   height: 40px;
+   transition: 0.3s;
+}
+
+.insurance .insurance-plane .month button:hover{
+    background-color:  rgb(255, 136, 0);
+    border: 1px solid black;
+}
+
+#cancelInsurance{
+    color: rgb(229, 22, 22);
+    font-size: 25px;
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    bottom: 230px;
+    left: 160px;
+    animation-name: cacnel;
+    transition: all ease-in 0.5s;
+    transition-duration: 0.5s;
+}
+
+@keyframes cancel {
+    form{
+        opacity: 0;
+        bottom: 270px;
+    }
+    to{
+        opacity: 1;
+        bottom: 230px;
+    }
+}
+
+/* 
+#product-des{
+    width: 100%;
+    height: auto;
+}
+
+#product-des ul{
+    background-color: red;
+} */
+
+/* range slider */
+
+#range4 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+  }
+
+
+  /* Slider track (line) ka color orange karna */
+.slidecontainer input{
+     transition: 2s;
+  }
+  
+  /* Slider thumb (handle) ka color orange karna */
+  .slidecontainer input[type="range"]::-webkit-slider-thumb {
+    background-color: orange; /* Webkit browsers (Chrome, Safari) ke liye */
+  }
+  
+  .slidecontainer input[type="range"]::-moz-range-thumb {
+    background-color: orange; /* Mozilla Firefox ke liye */
+  }
+  
+  .slidecontainer input[type="range"]::-ms-thumb {
+    background-color: orange; /* Microsoft Edge ke liye */
+  }
+  
+
+
+  .slidecontainer {
+    width: 50%;
+    min-width: 250px;
+    height: 80%;
+    background: #fff;
+    padding: 0px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .line{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+.sliderticks {
+    display: flex;
+    justify-content: space-between;
+   padding-left: 10px;
+   padding: 0px 0px 20px;
+  }
+
+  .vr{
+    height: 10px;
+  }
+  
+/* product description / about*/
+
+#product-des{
+    padding-left: 10px;
+}
+
+#product-des .read-more{
+    display: none;
+}
+
+#product-des .dot li h6{
+    list-style: none; /* panding */
+}
+
+#product-des h6{
+    font-size: 18px;
+    opacity: 0.7;
+}
+
+
+#product-des .about{
+   width: auto;
+}
+
+#product-des .about p{ 
+    line-height: 25px;
+    text-align:left;
+}
+
+#product-des #second-h6{
+    font-weight: 600;
+    opacity: 1;
+}
+#product-des .light-txt{
+    opacity: 0.7;
+    margin-bottom: -1px;
+}
+#product-des .light-dark-heading{
+    opacity: 1;
+}
+
+.figure{
+    width: 100%;
+    padding: 0 180px 15px;
+    padding-bottom: 30px;
+}
+
+.figure .btn{
+    border: 1px solid #bec6cf;
+    background-color: rgb(237, 232, 232);
+    transition: none;
+}
+.figure img {
+    width: 100%;
+    height: 520px;
+     display: flex; 
+    padding-left: 120px;
+     justify-content: center; 
+}

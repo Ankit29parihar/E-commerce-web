@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Orders</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Add custom styles here */
+        .order-item {
+            margin-bottom: 20px;
+        }
+
+        .order-details {
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 5px;
+        }
+
+        .order-details h5 {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container mt-5">
+    <h2 class="mb-4">My Orders</h2>
+    <div class="row" id="ordersList">
+        <!-- Orders will be dynamically added here -->
+    </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script>
+    // Sample data
+    const orders = [
+        { 
+            orderId: 123456789,
+            productName: 'Product 1',
+            price: 100,
+            orderDate: '2023-10-14',
+            status: 'Delivered'
+        },
+        { 
+            orderId: 987654321,
+            productName: 'Product 2',
+            price: 150,
+            orderDate: '2023-10-12',
+            status: 'Shipped'
+        }
+        // Add more orders here as needed
+    ];
+
+    const ordersList = document.getElementById('ordersList');
+
+    // Function to generate dynamic order items
+    function generateOrders() {
+        orders.forEach(order => {
+            const orderItem = document.createElement('div');
+            orderItem.classList.add('col-md-6', 'order-item');
+
+            const orderDetails = document.createElement('div');
+            orderDetails.classList.add('order-details');
+
+            orderDetails.innerHTML = `
+                <h5>Order ID: ${order.orderId}</h5>
+                <p>Product Name: ${order.productName}</p>
+                <p>Price: $${order.price}</p>
+                <p>Order Date: ${order.orderDate}</p>
+                <p>Status: ${order.status}</p>
+            `;
+
+            orderItem.appendChild(orderDetails);
+            ordersList.appendChild(orderItem);
+        });
+    }
+
+    // Call the function to generate orders
+    generateOrders();
+</script>
+
+</body>
+</html>
